@@ -1,0 +1,13 @@
+{
+	"cars": [
+		{
+			"make": "",
+			"model": "",
+			"year": "",
+			"price": "",
+			"color": "",
+			"purchased": ,
+			"description": ""
+		}
+	]
+}
