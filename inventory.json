@@ -7,7 +7,7 @@
 			"price": "$47,999",
 			"color": "Silver",
 			"purchased": false,
-			"description": "Delorean DMC 12 with a very low mileage of only 3200 miles.  It's the desirable 5 speed manual with a black interior, original Craig radio, tool kit, jack, space saver spare wheel, early black door locks and even original tyres!  it starts right up no smoke or issues, it drives as it should although if you are going to use it on the road new tyres would be advisable.  You can see from the pictures that this is a very clean, low millage, original example of a classic that has been consistently increasing in value."
+			"description": "3200 miles, 5 speed manual, black interior, original Craig radio, tool kit, jack, space saver spare wheel, early black door locks, original tyres!"
 		},
 		{
 			"make": "Duesenberg",
@@ -16,7 +16,7 @@
 			"price": "$65,999",
 			"color": "Peru",
 			"purchased": true ,
-			"description": "This impressive car is a 1931 Duesenberg Dual Cowl phaeton recreation. Factory built in Canada and one of only THREE cars built. This car was built to spec for a very wealthy Russian at a huge cost. Currently still located in Rotterdam , Holland , Europe with Russian title. Please CALL me for more info and price , thank you."
+			"description": "Factory built in Canada and one of only THREE cars built. This car was built to spec for a very wealthy Russian at a huge cost."
 		},
 		{
 			"make": "Sunbeam",
@@ -25,7 +25,7 @@
 			"price": "$35,999",
 			"color": "ForestGreen",
 			"purchased": false,
-			"description": "The Sunbeam boasts a strong engine, robust gearbox and generally very good mechanicals. Brakes have been recently overhauled, the car drives incredibly well with good performance coming from the 16hp engine and this is a pre-war that can be regularly used and has proven reliable. GP 7295 comes with a VSCC eligibility document from 2011 and is certainly capable of long distance touring and regular use. The car has everything in terms of originality, provenance, paperwork, reliability, usability and of course the quality and luxury coming from a top class British manufacturer of its day."
+			"description": "Strong engine, robust gearbox and generally very good mechanicals, new brakes, 16hp engine,  The car has everything in terms of originality, provenance, paperwork, reliability, usability."
 		}
 	]
 }

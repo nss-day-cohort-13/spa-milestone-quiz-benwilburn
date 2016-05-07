@@ -11,10 +11,12 @@ var CarLot = (function(domBuild) {
 	var inventoryArea = document.getElementById("inventory");
 	function populatePage (carInventory) {
 	  // Loop over the inventory and populate the page
+  	inventoryArea.innerHTML = `<div class="row">`;
 	  for (var i = 0; i < carInventory.length; i++) {
 	  	var car = carInventory[i];
-	  	inventoryArea.innerHTML += `<div class='row'><div class='col-xs-12 col-sm-6 col-md-4 col-lg-4'>${car.make}</div></div><div class='col-xs-12 col-sm-6 col-md-4 col-lg-4'>${car.model}</div><div class='col-xs-12 col-sm-6 col-md-4 col-lg-4'>${car.year}</div><div class='col-xs-12 col-sm-6 col-md-4 col-lg-4'>${car.price}</div><div class='col-xs-12 col-sm-6 col-md-4 col-lg-4'>${car.color}</div><div class='col-xs-12 col-sm-6 col-md-4 col-lg-4'>${car.purchased}</div><div class='col-xs-12 col-sm-6 col-md-4 col-lg-4'>${car.description}</div>`;
+	  	inventoryArea.innerHTML += `<div class="card col-sm-3 col-md-3 col-lg-3"><dl class="list-unstyled"><dt>Make</dt><dd>${car.make}</dd><dt>Model</dt><dd>${car.model}</dd><dt>Year</dt><dd>${car.year}</dd><dt>Price</dt><dd>${car.price}</dd><dt>Color</dt><dd>${car.color}</dd><dt>Purchased?</dt><dd>${car.purchased}</dd><dt>Description</dt><dd>${car.description}</dd></dl></div><div class="col-sm-1 col-md-1 col-lg-1"></div>`;
 	  };
+  	inventoryArea.innerHTML += `</div>`
 
 
   // Now that the DOM is loaded, establish all the event listeners needed
