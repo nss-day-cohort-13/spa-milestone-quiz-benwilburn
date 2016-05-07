@@ -2,3 +2,19 @@
 	border: solid red 2px;
 	margin: auto;
 }
+
+.nav-img {
+	width: 50%;
+	height: auto;
+}
+
+.navbar {
+	height: 115px;
+}
+
+nav.navbar form.navbar-form {
+	position: absolute;
+	right: 125px;
+	top: 35px;
+}
+
