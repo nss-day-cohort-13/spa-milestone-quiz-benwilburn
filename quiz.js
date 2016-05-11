@@ -14,7 +14,7 @@ var CarLot = (function(domBuild) {
   	inventoryArea.innerHTML = `<div class="row">`;
 	  for (var i = 0; i < carInventory.length; i++) {
 	  	var car = carInventory[i];
-	  	inventoryArea.innerHTML += `<div class="card col-sm-3 col-md-3 col-lg-3"><dl class="list-unstyled"><dt>Make</dt><dd>${car.make}</dd><dt>Model</dt><dd>${car.model}</dd><dt>Year</dt><dd>${car.year}</dd><dt>Price</dt><dd>${car.price}</dd><dt>Color</dt><dd>${car.color}</dd><dt>Purchased?</dt><dd>${car.purchased}</dd><dt>Description</dt><dd>${car.description}</dd></dl></div><div class="col-sm-1 col-md-1 col-lg-1"></div>`;
+	  	inventoryArea.innerHTML += `<div class="card col-sm-3 col-md-3 col-lg-3"><dl class="list-unstyled"><img class="cardImg" src='${car.img}'><dt>Make</dt><dd>${car.make}</dd><dt>Model</dt><dd>${car.model}</dd><dt>Year</dt><dd>${car.year}</dd><dt>Price</dt><dd>${car.price}</dd><dt>Color</dt><dd>${car.color}</dd><dt>Purchased?</dt><dd>${car.purchased}</dd><dt>Description</dt><dd>${car.description}</dd></dl></div><div class="col-sm-1 col-md-1 col-lg-1"></div>`;
 	  };
   	inventoryArea.innerHTML += `</div>`
 

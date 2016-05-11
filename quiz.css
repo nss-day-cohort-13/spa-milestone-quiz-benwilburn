@@ -3,18 +3,17 @@
 	margin: auto;
 }
 
-.nav-img {
-	width: 50%;
-	height: auto;
+.navBarDD{
+	float: left;
 }
 
-.navbar {
-	height: 115px;
+@media (min-width: 768px) {
+	.navbar-left {
+	    float: right!important;
+	}
 }
 
-nav.navbar form.navbar-form {
-	position: absolute;
-	right: 125px;
-	top: 35px;
+.cardImg {
+	width: 100%;
+	height: 175px;
 }
-

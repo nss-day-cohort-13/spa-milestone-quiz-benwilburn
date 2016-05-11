@@ -1,6 +1,7 @@
 {
 	"cars": [
 		{
+			"img": "images/delorean.jpg",
 			"make": "Delorean",
 			"model": "DMC 12",
 			"year": "1981",
@@ -10,6 +11,7 @@
 			"description": "3200 miles, 5 speed manual, black interior, original Craig radio, tool kit, jack, space saver spare wheel, early black door locks, original tyres!"
 		},
 		{
+			"img": "images/duesenberg.jpg",
 			"make": "Duesenberg",
 			"model": "Dual Cowl Phaeton",
 			"year": "1931",
@@ -19,6 +21,7 @@
 			"description": "Factory built in Canada and one of only THREE cars built. This car was built to spec for a very wealthy Russian at a huge cost."
 		},
 		{
+			"img": "images/sunbeam.jpg",
 			"make": "Sunbeam",
 			"model": "Saloon",
 			"year": "1931",
