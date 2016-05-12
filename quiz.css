@@ -1,6 +1,19 @@
+body {
+	background: url(images/hotrod.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+
 .card {
-	border: solid red 2px;
+	background-color: white;
+	border-radius: 2%;
+	border: 3px dotted;
 	margin: auto;
+	padding: 20px;
+}
+
+.clickedCard {
+	border: 6px;
 }
 
 .navBarDD{
@@ -9,11 +22,35 @@
 
 @media (min-width: 768px) {
 	.navbar-left {
-	    float: right!important;
+	    float: right !important;
+	}
+	.userInput {
+		width: 500px !important;
 	}
 }
 
-.cardImg {
+#cardImg {
 	width: 100%;
 	height: 175px;
+	border-radius: 5%;
+}
+
+
+.headingText {
+	color: white;
+}
+
+.centerItem {
+	text-align: center;
+}
+
+.cardBorderWidth-BackgroundColorToggle {
+	border-width: 6px;
+	background-color: black;
+	color: deepskyblue;
+	;
+}
+
+.cardBorderWidth-BackgroundColorToggle dt {
+	color: limegreen;
 }
