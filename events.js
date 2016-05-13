@@ -7,12 +7,16 @@ var CarLot = (function(aug) {
 
 	aug.activateEvents = function(domElement) {
 		for (var i = 0; i < domElement.length; i++) {
+			var color = "grey";
 			domElement[i].addEventListener("click", () => {
-				var color = "grey";
 				var selectedElement = event.currentTarget;
-				CarLot.resetStyle(color);
-				CarLot.changeSelectedStyle(selectedElement, color);
-				CarLot.editDescription(selectedElement);
+				if(selectedElement.classList.contains("cardBorderWidth")){
+						selectedElement.classList.remove("cardBorderWidth", color);
+				} else {
+						CarLot.resetStyle(color);
+						CarLot.changeSelectedStyle(selectedElement, color);
+						CarLot.editDescription(selectedElement);
+				}
 			});
 			userInput.addEventListener("keyup", () => {
 				event.preventDefault();
@@ -20,7 +24,10 @@ var CarLot = (function(aug) {
 				domElement.innerHTML = userInput.value;
 			});
 
-			submit.addEventListener("click", formReset);
+			submit.addEventListener("click", () => {
+				formReset();
+				CarLot.resetStyle(color);
+			});
 
 			function formReset (){
 				event.preventDefault();

@@ -5,8 +5,7 @@ var CarLot = (function(aug){
 
 
 	aug.changeSelectedStyle = function (domElement, color) {
-		domElement.classList.add("cardBorderWidth", color);
-
+			domElement.classList.add("cardBorderWidth", color);
 	}
 
 	aug.resetStyle = function (color) {
