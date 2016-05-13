@@ -8,7 +8,8 @@ var CarLot = (function(aug) {
 	  for (var i = 0; i < carInventory.length; i++) {
 	  	var car = carInventory[i];
 	  	row += `<div style="border-color: ${car.color};" class="card col-sm-3 col-md-3 col-lg-3">
-								<dl class="list-unstyled"><img id="cardImg" src='${car.img}'>
+								<dl class="list-unstyled">
+								<dd><img id="cardImg" src='${car.img}'></dd>
 								<dt>Make</dt>
 								<dd id="make">${car.make}</dd>
 								<dt>Model</dt>

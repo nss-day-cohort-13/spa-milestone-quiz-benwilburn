@@ -1,5 +1,4 @@
 
-
 var CarLot = (function (aug) {
 
   var inventory = [];

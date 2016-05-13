@@ -4,6 +4,11 @@ body {
 }
 
 
+#userInput {
+	width: 375px;
+}
+
+
 .card {
 	background-color: white;
 	border-radius: 2%;
@@ -20,14 +25,6 @@ body {
 	float: left;
 }
 
-@media (min-width: 768px) {
-	.navbar-left {
-	    float: right !important;
-	}
-	.userInput {
-		width: 500px !important;
-	}
-}
 
 #cardImg {
 	width: 100%;
@@ -44,13 +41,25 @@ body {
 	text-align: center;
 }
 
-.cardBorderWidth-BackgroundColorToggle {
+.cardBorderWidth {
 	border-width: 6px;
-	background-color: black;
 	color: deepskyblue;
 	;
 }
 
-.cardBorderWidth-BackgroundColorToggle dt {
+.cardBorderWidth dt {
 	color: limegreen;
+}
+
+.grey {
+	background-color: grey;
+}
+
+
+.navbar-toggle {
+	background-color: white;
+}
+
+.navbar-toggle.collapsed:hover {
+	background-color: white;
 }

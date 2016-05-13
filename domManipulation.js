@@ -1,22 +1,26 @@
 
 var CarLot = (function(aug){
+	var userInput = document.querySelector("#userInput");
+	var collapsedUserInput = document.querySelector("#collapsedUserInput");
 
-	aug.expandBorder = function(domElement) {
-		// var card = event.currentTarget.closest(".card");
-		// card.classList.toggle("cardBorderWidth-BackgroundColorToggle")
-		domElement.style.borderWidth = 'thick';
+
+	aug.changeSelectedStyle = function (domElement, color) {
+		domElement.classList.add("cardBorderWidth", color);
+
 	}
 
-	aug.changeBackgroundColor = function(domElement,color) {
-		domElement.style.backgroundColor = color;
+	aug.resetStyle = function (color) {
+		var cards = document.querySelectorAll(".card");
+		for (var i = 0; i < cards.length; i++) {
+			cards[i].classList.remove("cardBorderWidth", color);
+		};
 	}
 
-	aug.resetBorder = function(domElement) {
-		domElement.style.borderWidth = "";
-	}
-
-	aug.changeBackgroundColor = function(domElement, color) {
-		domElement.style.backgroundColor = "";
+	aug.editDescription = function (domElement) {
+		userInput.focus();
+		var elementTextToEdit = domElement.querySelector("#description").textContent;
+		userInput.value = elementTextToEdit;
+		elementTextToEdit = "";
 	}
 
 	return aug;
